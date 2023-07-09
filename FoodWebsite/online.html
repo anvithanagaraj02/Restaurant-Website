@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery</title>
+    <link rel="stylesheet" type="text/css" href="onl.css">
+    <script type="text/javascript" src="food.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div ><button class="cart">My Cart</button></div>
+        <div ><button class="previous-orders">My Previous Orders</button></div>
+      </div>
+      
+      <div class="content">
+        <div class="left-section">
+          <div class="menu">
+            <ul>
+              <li><a href="#" onclick="displayCategory('malnad')">Malnad Special</a></li>
+              <li><a href="#" onclick="displayCategory('non-veg')">Non Veg</a></li>
+              <li><a href="#" onclick="displayCategory('veg')">Veg</a></li>
+              <li><a href="#" onclick="displayCategory('chinese')">Chinese</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="right-section">
+          <div class="message">Select the Category of your choice</div>
+          <div class="items" id="category-items"></div>
+        </div>
+      </div>
+      
+</body>
+</html>

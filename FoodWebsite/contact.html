@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+   <style>
+    h1{
+        margin-left: 160px;
+        color: rgb(235, 235, 235);
+    }
+    body{
+        background-image: url("https://media.istockphoto.com/id/1271752802/photo/phone-and-e-mail-icons-on-wooden-cubes-with-contact-us-text-on-blue-background-web-page.jpg?s=612x612&w=0&k=20&c=dk9oPaDy_L9mv_icOMgsFGzEDrX0NUI3I8xBQ-DAxQM=");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    p{
+        color:rgb(235, 235, 235);
+    }
+    .msgname{
+        margin-top:5px;
+        margin-left:30px;
+        margin-right: 20px;;
+    }
+    .msg{ margin-top: 20px;
+        padding:50px;}
+    .firstname{padding:10px;}
+    .lastname{padding:10px;}
+    .main{display: block;}
+    .names{display: flex;
+    padding:20px;}
+
+    .form{
+        color: rgb(235, 235, 235);
+    }
+
+    .sub{
+        padding:10px;
+        margin-top: 30px;
+        margin-left: 200px;
+    }
+    @media (max-width: 768px) {
+            h1 {
+                margin-left: 10px;
+            }
+            p {
+                margin-left: 10px;
+            }
+            .msgname,
+            .msg,
+            .sub {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+   </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>Please send your message below. We will get back to you at the earliest!</p>
+
+    <form class="form">
+        <div class="main">
+            <div class="names">
+                <label class="firstname" for="fname">First Name</label>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label class="lastname" for="lname">Last Name</label>
+                <input  type="text" id="lname" name="lname"><br>
+             </div>
+
+        <label class="msgname" for="msg">Message</label>
+        <input class="msg" type="text" id="msg" name="msg"><br>
+     </div>
+
+        <input class="sub" type="submit" value="Send">
+    </form>
+</body>
+</html>

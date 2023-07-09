@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <title>Our Branches</title>
+      <style>
+        #map {
+          height: 400px;
+        }
+      </style>
+      <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAiVnsQ2sdW9NuxL7Eybl0Vgmb2HKoKLS8Y&callback=initMap" async defer></script>
+      <script>
+        function initMap() {
+          var thirthahalli = { lat: 13.6868, lng: 75.2473 };
+          var mysore = { lat: 12.2958, lng: 76.6394 };
+          var udupi = { lat: 13.3409, lng: 74.7421 };
+    
+          var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 7,
+            center: mysore,
+          });
+    
+          var marker1 = new google.maps.Marker({
+            position: thirthahalli,
+            map: map,
+            title: "Malnad Delights - Thirthahalli",
+          });
+    
+          var marker2 = new google.maps.Marker({
+            position: mysore,
+            map: map,
+            title: "Malnad Delights - Mysore",
+          });
+    
+          var marker3 = new google.maps.Marker({
+            position: udupi,
+            map: map,
+            title: "Malnad Delights - Udupi",
+          });
+        }
+      </script>
+    </head>
+    <body>
+      <h1>Malnad Delights - Branch Locations</h1>
+      <div id="map"></div>
+    
+      <h2>Contact Us</h2>
+      <p>For any inquiries, please call: +91 6564739468</p>
+    </body>
+    </html>
+ 
